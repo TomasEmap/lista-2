@@ -3,11 +3,11 @@
 
 (define (sum term a next b)
   (define (iter a result)
-    (if "<??>"
-        "<??>"
-        (iter "<??>" "<??>")))
+    (if (> a
+        b)
+        (iter (next a) (+ result (term a)))))
   
-  (iter "<??>" "<??>"))
+  (iter a 0))
 
 
 
